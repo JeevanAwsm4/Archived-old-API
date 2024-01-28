@@ -1,7 +1,6 @@
 
 altgraph==0.17.2
 amqp==5.2.0
-apturl==0.5.2
 asgiref==3.7.2
 bcrypt==3.2.0
 billiard==4.2.0

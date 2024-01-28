@@ -79,6 +79,10 @@ class Want(models.Model):
         ('4', '4'),
         ('5', '5'),
     ]
+    WANT_TYPE = [
+        ('blood','blood'),
+        ('platelets','platelets')
+    ]
 
     name = models.CharField(max_length=255)
     age = models.CharField(max_length=3, null=True, blank=True)
@@ -88,3 +92,4 @@ class Want(models.Model):
     hospital = models.CharField(max_length=255, null=True, blank=True)
     district = models.ForeignKey('Districts', on_delete=models.CASCADE, blank=False, null=True)
     created_at = models.DateTimeField(auto_now_add=True,null=True)
+    type = models.CharField(max_length=15, null=True,blank=False, choices=WANT_TYPE)

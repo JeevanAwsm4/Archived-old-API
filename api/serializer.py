@@ -47,4 +47,5 @@ class WantSerializer(serializers.ModelSerializer):
             'no_of_units_here',
             'hospital',
             'district',
+            'type',
         ]
